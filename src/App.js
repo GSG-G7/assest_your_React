@@ -3,6 +3,8 @@ import Header from "./ClassComponents/Header";
 import data from "./data";
 import "./App.css";
 
+
+console.log(data)
 class App extends React.Component {
   constructor(props) {
     super(props);

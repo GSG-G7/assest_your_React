@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./ClassComponents/Header";
 import data from "./data";
+import Card from './ClassComponents/Card';
 import "./App.css";
 
 
@@ -49,7 +50,7 @@ class App extends React.Component {
            let top = questionIndex* cardHeight + headerHeight , 
                key = `${categoryIndex}-${questionIndex}`;
 
-               cards.push(<card left={left} top={top} height={cardHeight} width={cardWidth} question={question} key={key}/>);
+               cards.push(<Card left={left} top={top} height={cardHeight} width={cardWidth} question={question} key={key}/>);
            });
         });
 
@@ -57,6 +58,7 @@ class App extends React.Component {
       <div>
           <Header data={this.state.data} headerWidth={cardWidth}/>
           {cards}
+          {console.log(cards)}
       </div>
     );
   }

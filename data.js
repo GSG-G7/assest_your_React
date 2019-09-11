@@ -93,22 +93,22 @@ var data = [
       {
         points: 400,
         question:
-          "Using the proposed ECMAScript module syntax, how do you load the Mortgage.js module from the current directory and make all its members available in an object named mortgage?",
-        answer: "<code>import * as mortgage from './Mortgage';</code>"
+          "<p>What does the “webpack” command do?</p><ol><li>Transpiles all the Javascript down into one file</li><li>Runs react local development server</li><li>Both A and B</li><li>None</li></ol>",
+        answer: "ranspiles all the Javascript down into one file"
       },
       {
         points: 400,
-        question: "What are the colors of the olympic rings?",
-        answer: "<img src='assets/img/olympic_rings.png'/>"
+        question: "<p>What is a react.js in MVC?</p><ol><li>Controller</li><li>Middleware</li><li>Model</li><li>Router</li></ol>",
+        answer: "Controller"
       },
       {
         points: 400,
-        question: "What's the date of the first React commit on GitHub?",
+        question: "<p>What's the date of the first React commit on GitHub?</p><ol><li> May 10th,2014</li><li> Sep 3rd,2013</li><li>May 26th, 2013</li><li>Nov 1st,2011</li></ol>",
         answer: "May 26th, 2013"
       },
       {
         points: 400,
-        question: "What's the hex color of the React logo?",
+        question: "<p>What's the hex color of the React logo?</p><ol><li>#61DAFB</li><li>#572E31</li><li>#925883</li><li>#E4324e</li></ol>",
         answer: "#61DAFB"
       }
     ]

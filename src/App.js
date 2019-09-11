@@ -12,7 +12,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       windowWidth: window.innerWidth,
-      windowHight: window.innerHeight,
+      windowHeight: window.innerHeight,
       data: []
     };
   }
@@ -20,7 +20,7 @@ class App extends React.Component {
   changeSize() {
     this.setState({
       windowWidth: window.innerWidth,
-      windowHight: window.innerHeight
+      windowHeight: window.innerHeight
     });
   }
 
@@ -40,6 +40,21 @@ class App extends React.Component {
   }
 
   render() {
+    let headerHeight = this.state.windowWidth > 640 ? 60: 32 , 
+        cardWidth = this.state.windowWidth / this.state.cols, 
+        cardHeight = (this.state.windowHeight - headerHeight)/this.state.rows,
+        cards= []; 
+        
+        this.state.data.forEach((category,categoryIndex) =>{
+           let left = categoryIndex * cardWidth ; 
+           category.questions.forEach((question ,questionIndex) =>{
+           let top = questionIndex* cardHeight + headerHeight , 
+               key = `${categoryIndex}-${questionIndex}`;
+
+               cards.push(<card left={left} top={top} height={cardHeight} width={cardWidth} question={question} key={key}/>);
+           });
+        });
+
     return <div></div>;
   }
 }

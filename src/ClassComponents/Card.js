@@ -44,7 +44,7 @@ class Card extends React.Component {
                 transform: 'translate3d(' + this.props.left + 'px,' + this.props.top + 'px,0)',
                 WebkitTransform: 'translate3d(' + this.props.left + 'px,' + this.props.top + 'px,0)'
             },
-            front = this.state.done ? <img alt="reactImage" src='./images/react.svg'/> : <span className='points'>{this.props.question.scores}</span>,
+            front = this.state.done ? <img alt="reactImage" src='public/images/react.png'/> : <span className='points'>{this.props.question.scores}</span>,
             className = 'flipper';
 
         if (this.state.interface !== 'scores') {
@@ -61,7 +61,7 @@ class Card extends React.Component {
                     </div>
                     <div className='back'>
                         <span>{this.getCardLabel()} </span>
-                        <img alt="react" src='../../public/images/react.svg'/>
+                        <img alt="react" src='public/images/react.png'/>
                     </div>
                 </div>
             </div>

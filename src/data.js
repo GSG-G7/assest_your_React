@@ -1,4 +1,4 @@
-var data = [
+let data = [
   {
     category: "React Beginner",
     questions: [
@@ -114,3 +114,5 @@ var data = [
     ]
   }
 ];
+
+export default data;

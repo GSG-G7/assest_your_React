@@ -1,10 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import Card from "./ClassComponents/Card";
-import Headers from "./ClassComponents/Header";
-import request from "./FunctionalComponents/request";
-import audio from "./FunctionalComponents/audio";
-import data from "../data";
+import Header from "./ClassComponents/Header";
+import data from "./data";
 import "./App.css";
 
 class App extends React.Component {
@@ -29,7 +25,7 @@ class App extends React.Component {
     let rows = 0;
     data.forEach(cateogry => {
       if (cateogry.questions.length > rows) {
-        rows = cateogry.questions.length;
+         return rows = cateogry.questions.length;
       }
     });
     this.setState({ data: data, rows: rows, cols: data.length });
@@ -55,7 +51,12 @@ class App extends React.Component {
            });
         });
 
-    return <div></div>;
+    return (
+      <div>
+          <Header data={this.state.data} headerWidth={cardWidth}/>
+          {cards}
+      </div>
+    );
   }
 }
 

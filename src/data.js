@@ -35,24 +35,24 @@ var data = [
         points: 200,
         question:
           "<p>Where can you define a component's initial state when you use the ES6 Class syntax?</p><ol><li>getInitialState()</li><li>getInitialProps()</li><li>The component's constructor</li></ol>",
-        answer: "C. The component's constructor"
+        answer: "The component's constructor"
       },
       {
         points: 200,
         question:
-          "Using npm, which package should you require/import in addition to 'react' to render a React component in an existing DOM element of your HTML file?<ol><li>Redux</li><li>react-dom</li><li>Material UI</li></ol>",
+          "<p>Using npm, which package should you require/import in addition to 'react' to render a React component in an existing DOM element of your HTML file?</p><ol><li>Redux</li><li>react-dom</li><li>Material UI</li></ol>",
         answer: "react-dom"
       },
       {
         points: 200,
         question:
           "<p>Which lifecycle function should you use to set default property values?</p><ol><li>getInitialState</li><li>getInitialProps</li><li>getDefaultProps</li></ol>",
-        answer: "C. getDefaultProps"
+        answer: "getDefaultProps"
       },
       {
         points: 200,
         question:
-          "Which lifecycle method is invoked once, immediately after the initial rendering occurs?<ol><li>componentDidUpdate</li><li>componentDidMount</li><li>ComponentWillUnmount</li></ol>",
+          "<p>Which lifecycle method is invoked once, immediately after the initial rendering occurs?</p><ol><li>componentDidUpdate</li><li>componentDidMount</li><li>ComponentWillUnmount</li></ol>",
         answer: "componentDidMount"
       }
     ]

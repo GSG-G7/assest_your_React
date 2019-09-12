@@ -24,14 +24,14 @@ class Card extends React.Component {
       this.setState({ interface: "scores", done: true, switching: true });
     }
   }
-    getLabelBack() {
-      return {
-        __html:
-          this.state.interface === "question"
-            ? this.props.question.question
-            : this.props.question.answer
-      };
-    }
+  getLabelBack() {
+    return {
+      __html:
+        this.state.interface === "question"
+          ? this.props.question.question
+          : this.props.question.answer
+    };
+  }
 
   transitonEnd(event) {
     if (event.propertyName === "width") {
@@ -75,6 +75,7 @@ class Card extends React.Component {
           <div className='front'>{front}</div>
           <div className='back'>
             <span dangerouslySetInnerHTML={this.getLabelBack()} />
+
             <img
               alt='react img'
               src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSb-fKJMA2hvqzBq2zzo8uyuEMt8AjEMmF5bOIGCc8fpU5JgK-f'

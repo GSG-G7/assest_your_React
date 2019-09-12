@@ -51,7 +51,7 @@ class Card extends React.Component {
       front = this.state.done ? (
         <img
           alt='react img'
-          src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSb-fKJMA2hvqzBq2zzo8uyuEMt8AjEMmF5bOIGCc8fpU5JgK-f'
+          src='https://hackernoon.com/hn-images/1*To2H39eauxaeYxYMtV1afQ.png'
         />
       ) : (
         <span className='scores'>{this.props.question.scores}</span>
@@ -77,7 +77,7 @@ class Card extends React.Component {
             <span dangerouslySetInnerHTML={this.getLabelBack()} />
             <img
               alt='react img'
-              src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSb-fKJMA2hvqzBq2zzo8uyuEMt8AjEMmF5bOIGCc8fpU5JgK-f'
+              src='https://hackernoon.com/hn-images/1*To2H39eauxaeYxYMtV1afQ.png'
             />
           </div>
         </div>

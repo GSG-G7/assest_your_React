@@ -79,6 +79,7 @@ class Card extends React.Component {
           <div className='front'>{front}</div>
           <div className='back'>
             <span dangerouslySetInnerHTML={this.getLabelBack()} />
+
             <img
               alt='react img'
               src='https://hackernoon.com/hn-images/1*To2H39eauxaeYxYMtV1afQ.png'

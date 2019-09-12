@@ -4,9 +4,8 @@ let data = [
     questions: [
       {
         scores: 100,
-        question:
-          "<p>What part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li><li>All of the above</li></ol>",
-        answer: "B. The View"
+        question: "<p>What part of your application does React focus on?</p><ol><li>The Model</li><li>The View</li><li>The Controller</li></ol>",
+        answer: "The View"
       },
       {
         scores: 100,
@@ -15,13 +14,13 @@ let data = [
         answer: "JSX"
       },
       {
-        points: 100,
+        scores: 100,
         question:
           "<p>What tool can you use to transpile JSX?</p><ol><li>npm</li><li>Eslint</li><li>Babel</li><li>Webpack</li></ol>",
         answer: "Babel"
       },
       {
-        points: 100,
+        scores: 100,
         question:
           "<p>React uses a _____________ to limit direct manipulation of the DOM and improve performance</p><ol><li>Virtual DOM</li><li>Real DOM</li><li>JSON file</li><li>SASS</li></ol>",
         answer: "Virtual DOM"
@@ -68,9 +67,9 @@ let data = [
       },
       {
         scores: 300,
-        question: "<p>Props are __ into other components</p><ol><li>Injected</li><li>Methods</li><li>Both A and B</li></ol>",
-        answer:
-          "Methods"
+        question:
+          "<p>Props are __ into other components</p><ol><li>Injected</li><li>Methods</li><li>Both A and B</li></ol>",
+        answer: "Methods"
       },
       {
         scores: 300,
@@ -82,8 +81,7 @@ let data = [
         scores: 300,
         question:
           "<p>At the highest level, React components have lifecycle events that fall into</p><ol><li>Initialization</li><li>State/Property Updates</li><li>Destruction</li><li>All of these</li></ol>",
-        answer:
-          "All of these"
+        answer: "All of these"
       }
     ]
   },
@@ -98,17 +96,20 @@ let data = [
       },
       {
         scores: 400,
-        question: "<p>What is a react.js in MVC?</p><ol><li>Controller</li><li>Middleware</li><li>Model</li><li>Router</li></ol>",
+        question:
+          "<p>What is a react.js in MVC?</p><ol><li>Controller</li><li>Middleware</li><li>Model</li><li>Router</li></ol>",
         answer: "Controller"
       },
       {
         scores: 400,
-        question: "<p>What's the date of the first React commit on GitHub?</p><ol><li> May 10th,2014</li><li> Sep 3rd,2013</li><li>May 26th, 2013</li><li>Nov 1st,2011</li></ol>",
+        question:
+          "<p>What's the date of the first React commit on GitHub?</p><ol><li> May 10th,2014</li><li> Sep 3rd,2013</li><li>May 26th, 2013</li><li>Nov 1st,2011</li></ol>",
         answer: "May 26th, 2013"
       },
       {
         scores: 400,
-        question: "<p>What's the hex color of the React logo?</p><ol><li>#61DAFB</li><li>#572E31</li><li>#925883</li><li>#E4324e</li></ol>",
+        question:
+          "<p>What's the hex color of the React logo?</p><ol><li>#61DAFB</li><li>#572E31</li><li>#925883</li><li>#E4324e</li></ol>",
         answer: "#61DAFB"
       }
     ]

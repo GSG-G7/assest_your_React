@@ -22,9 +22,7 @@ simple quiz game that display cards and every card contains a question, and you 
 
 *  when the User press any card , it display the question with its choices. 
 
-* The User should answer the question to get it scores. 
-
-* The App will display the user final scores for his/her answers.
+* The user can think about the correct answer then he can see the correct one by clicking to move to answer view. 
 
    
 ## Our Steps

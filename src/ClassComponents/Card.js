@@ -28,8 +28,10 @@ class Card extends React.Component {
       return {
         __html:
           this.state.interface === "question"
-            ? this.props.question.question
-            : this.props.question.answer
+            ? (this.props.question.question +
+              (this.props.question.choices).join("<br/>")
+              )
+            : (this.props.question.answer)
       };
     }
 

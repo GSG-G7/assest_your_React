@@ -28,11 +28,13 @@ class Card extends React.Component {
       return {
         __html:
           this.state.interface === "question"
-            ? (this.props.question.question +
-              (this.props.question.choices).join("<br/>")
+            ? (this.props.question.question + '<ol>'+
+              '<li>' + (this.props.question.choices).join('</li><li>') + '</li>'
+              + '</ol>'
               )
             : (this.props.question.answer)
       };
+
     }
 
   transitonEnd(event) {

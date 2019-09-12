@@ -24,20 +24,6 @@ class Card extends React.Component {
       this.setState({ interface: "scores", done: true, switching: true });
     }
   }
-
-  showData = () => {
-    return (
-      <p>this.props.question.question</p> +
-      this.props.question.choice.map(answer => (
-        <ol>
-          <li>answer</li>
-        </ol>
-      ))
-    );
-  };
-
-
-
     getLabelBack() {
       return {
         __html:
@@ -88,7 +74,6 @@ class Card extends React.Component {
         <div className='card'>
           <div className='front'>{front}</div>
           <div className='back'>
-            <span>{this.showData}</span>
             <span dangerouslySetInnerHTML={this.getLabelBack()} />
             <img
               alt='react img'
